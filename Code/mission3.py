@@ -1,0 +1,12 @@
+async def red_3(robot):
+    await robot.drive.straight(90)
+    await robot.drive.turn(90)
+    await robot.drive.straight(200)
+    robot.drive.settings(straight_speed=100)
+    await robot.drive.straight(230)
+    robot.drive.settings(straight_speed=700)
+    await robot.drive.straight(-330)
+    await robot.drive.turn(-90)
+    await robot.drive.straight(250)
+    await robot.drive.turn(90)
+    await robot.drive.straight(1500)
